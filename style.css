@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+ul {
+    display: flex;
+    align-content: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+}
+
+.name-logo {
+    display: flex;
+justify-content: left;
+}
