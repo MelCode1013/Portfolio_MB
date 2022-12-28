@@ -2,28 +2,87 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
 }
 
-ul {
-    display: flex;
-    align-content: center;
-    list-style: none;
+body {
+    height: 100vh;
+    background-color: #151515;
+    margin: 10px 30px;
+    max-width: 100vh;
 }
 
 a {
     text-decoration: none;
 }
 
-body {
-    height: 100vh;
-    background-color: black;
+ul {
+    list-style: none;
 }
 
-header {
-    display: flex;
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
 }
 
-.name-logo {
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.profile-picture {
     display: flex;
-justify-content: left;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.profile-picture > img {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1200px) {
+    
+    * {
+            margin: 0;
+    }
+    
+
+    ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    }
+
+    li {
+
+    margin: 0 25px;
+    }
+
+    body {
+    margin: 20px 80px;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .name-logo {
+    display: flex;
+    align-items: center;
+
+    }
+
+    h1 {
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    }
 }
