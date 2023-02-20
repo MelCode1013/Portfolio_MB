@@ -1,15 +1,15 @@
+/*Mobile first - 375px*/
+
 * {
     box-sizing: border-box;
     color: white;
     font-family: 'Space Grotesk', sans-serif;
-    margin: 0;
+    margin: 0;    
 }
 
 body {
-    height: 100vh;
     background-color: #151515;
-    margin: 10px 30px;
-    max-width: 100vh;
+    margin: 10px 0;
 }
 
 a {
@@ -42,11 +42,14 @@ h4 {
     display: none;
 }
 
+.profile-pic-mobile {
+    max-height: 430px;
+}
+
 .profile-picture {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
 
 .profile-picture > img {
@@ -54,21 +57,100 @@ h4 {
     max-width: 50%;
 }
 
+.profile-rings {
+    position: absolute;
+    top: 170px;
+    right: 200px;
+
+}
+
+.profile-pic-mobile {
+    position: absolute;
+    top: 10px;
+}
+
+.profile-circle {
+    position: absolute;
+    top:200px;
+}
+
 h1 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
-    line-height: 24px;
+    margin: 0 auto;
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
+    padding: 10px;
 }
+
+span, .contact-me {
+   border-bottom: #4ee1a0 solid 3px;
+}
+
+.intro {
+    height: 400px;
+    background-image: url('/assets/images/pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position-x: 120% ;
+    background-position-y: 75%;
+}
+
+.intro-text {
+position: absolute;
+top: 450px;
+height: 250px;
+text-align: center;
+margin: 0 auto;
+}
+
+
+
+.experience {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-top: #ffffff solid 3px;
+   border-bottom: #ffffff solid 3px;
+   padding: 20px 0;
+   margin-top: 250px;
+   margin-right: 20px;
+   margin-left: 20px;
+
+}
+
+.project-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-items img {
+    max-width: 90%;
+}
+
+.experience > div > h3 {
+    font-size: 40px;
+}
+
+.experience > p {
+    font-size: 10px;
+}
+
+.experience>div {
+    margin: 10px 0;
+}
+/*Tablet 768px*/
 
 
 /*Desktop*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
     
     * {
             margin: 0;
