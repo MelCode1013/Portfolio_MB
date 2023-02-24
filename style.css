@@ -149,6 +149,17 @@ margin: 0 auto;
 .experience>div {
     margin: 10px 0;
 }
+
+.projects-header {
+font-size: 40px;
+}
+
+.projects-section {
+    display: flex;
+    margin: 70px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
 /*Tablet 768px*/
 
 
