@@ -129,9 +129,13 @@ margin: 0 auto;
 
 .project-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+}
+
+.project-items > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-items img {
